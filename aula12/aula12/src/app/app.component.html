@@ -1,5 +1,11 @@
-<article>
-  <h3>Property Binding</h3>
-  <img src="{{ urlImagem }}" />
-  <img [src]="urlImagem" />
-</article>
+<section>
+  <article>
+      <h3>Two way data Binding</h3>
+      <div>
+          <input type="text"
+                 [(ngModel)] = "nome">
+          <p>Você digitou o nome: {{nome}}</p>
+
+      </div>
+  </article>
+</section>
