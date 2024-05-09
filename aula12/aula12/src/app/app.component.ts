@@ -11,23 +11,5 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'introducao-angular';
 
-  isMouseOver: boolean = false;
-  valorAtual: string = '';
-  valorSalvo: string = '';
-
-  botaoClicado() {
-    alert('Botão clicado!');
-  }
-
-  onKeyUp(event: KeyboardEvent) {
-    this.valorAtual = event.key;
-  }
-
-  salvarValor(event: any) {
-    this.valorSalvo = event;
-  }
-
-  onMouseOverOut() {
-    this.isMouseOver = !this.isMouseOver;
-  }
+  urlImagem = 'http://lorempixel.com.br/400/200';
 }
